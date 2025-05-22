@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.quicksand * {
+  font-family: "Quicksand", "Latin Modern Sans";
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background-color: black;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-image: url("assets/backdrop.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.main .black-op {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 70vh;
+}
+.main .black-op .text {
+  display: flex;
+  height: calc(100% - 155px);
+  width: 33vw;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  margin: auto;
+}
+.nav-left img {
+  width: 200px;
+}
+.red-btn {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.red-btn:hover {
+  background-color: rgb(193, 17, 25);
+}
+select {
+  padding: 6px 18px 6px 28px;
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url("assets/translate.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 22px auto;
+  color: white;
+  width: 3.5cm;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+select option {
+  color: black;
+}
+.text {
+  color: white;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+h5 {
+  font-size: 24px;
+  text-align: center;
+}
+h6 {
+  font-size: 18px;
+  text-align: center;
+}
+.email {
+  display: flex;
+  gap: 12px;
+}
+.get-started {
+  font-size: 22px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.email-input {
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 18px;
+  width: 300px;
+}
+.email-input::placeholder {
+  color: rgb(221, 221, 221);
+}
+#invalid-email {
+  display: flex;
+  visibility: hidden;
+  gap: 5px;
+  color: red;
+  align-self: self-start;
+  padding-left: 43px;
+  position: relative;
+  top: -20px;
+}
+@media screen and (max-width: 1600px) {
+  .nav-left img {
+    width: 100px;
+  }
+  nav {
+    width: 100vw;
+    /* padding: 10px; */
+  }
+  .main .black-op .text {
+    width: 100vw;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .main {
+    background-size: cover;
+  }
+  .email {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.separation {
+  height: 10px;
+  background-color: rgb(32, 32, 32);
+}
+h2 {
+  width: 85vw;
+  font-size: 30px;
+  margin: 2cm auto 0.5cm auto;
+}
+.cards {
+  display: flex;
+  width: 85vw;
+  margin: auto;
+  gap: 15px;
+}
+.card {
+  width: 25%;
+  height: min(max-content, 240px);
+  min-height: 240px;
+  padding: 20px 15px;
+  background-color: rgb(24, 8, 68);
+  border-radius: 15px;
+  position: relative;
+}
+.card #title {
+  font-size: 24px;
+}
+.card #desc {
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  margin-top: 0.5cm;
+}
+.card #icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+.questions {
+  display: flex;
+  width: 85vw;
+  margin: auto;
+  flex-direction: column;
+  gap: 7px;
+}
+.ques {
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.ques:hover {
+  background-color: rgb(78, 78, 78);
+}
+.end-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1.5cm ;
+}
+.end-text .email-input {
+  width:600px;
+}
+footer {
+  color: rgb(146, 146, 146);
+  width: 85vw;
+  margin: auto;
+}
+footer p {
+  width: 100%;
+  margin: auto;
+  margin-top: 3cm;
+}
+footer p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: auto;
+  width: 100%;
+  margin-top: 2cm;
+}
+.quick-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
